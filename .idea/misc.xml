@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6.1 virtualenv at C:\Python36\flasky\venv1" project-jdk-type="Python SDK" />
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <envs>
+          <env key="FLASKY_ADMIN" value="xyz1219@qq.com" />
+          <env key="MAIL_PASSWORD" value="krszmujnovspbajg" />
+          <env key="MAIL_USERNAME" value="XYZ1219" />
+        </envs>
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myEnvs">
+          <map>
+            <entry key="FLASKY_ADMIN" value="xyz1219@qq.com" />
+            <entry key="MAIL_PASSWORD" value="krszmujnovspbajg" />
+            <entry key="MAIL_USERNAME" value="XYZ1219" />
+          </map>
+        </option>
+      </console-settings>
+    </option>
+  </component>
+</project>
