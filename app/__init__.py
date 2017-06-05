@@ -4,17 +4,22 @@ from flask_mail import Mail
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 from config import config
+from flask_login import LoginManager
 
 bootstrap = Bootstrap()
 mail = Mail()
 moment = Moment()
 db = SQLAlchemy()
+login_manager = LoginManager()
+login_manager.session_protection = 'Strong'
+login_manager.login_view = 'auth.login'
 
 
 def create_app(config_name):
-    app = Flask(__name__)
+    app = Flask(__name__)  # 如果该模块被导入，__name__的值为模块名字，直接执行则为__main__
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
+    login_manager.init_app(app)
 
     bootstrap.init_app(app)
     mail.init_app(app)
